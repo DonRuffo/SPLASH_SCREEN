@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Galeria
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-grid *ngIf="showPhoto">
+    <ion-row>
+      <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
+        <ion-img [src]="photo.webviewPath"></ion-img>
+        <ion-card-content>
+          <p>{{ photo.filepath }}</p> 
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="ngOnInit()">
+      <ion-icon name="images"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
