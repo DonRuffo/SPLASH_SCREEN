@@ -145,7 +145,6 @@ Como último paso, sincronizar los cambios con el plugin de android y abrir Andr
 
 
 ![image](https://github.com/user-attachments/assets/043423e1-da5f-4b7a-8fe1-20e4b7339484)
-
 ![image](https://github.com/user-attachments/assets/01d4715d-714b-4ddd-9b1d-9c2de0555585)
 
 
