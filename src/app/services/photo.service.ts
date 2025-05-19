@@ -72,7 +72,8 @@ export class PhotoService {
     const capturedPhoto = await Camera.getPhoto({
       resultType: CameraResultType.Uri,
       source: CameraSource.Camera,
-      quality: 100
+      quality: 100,
+      saveToGallery: true
     })
 
     const savedImagenFile = await this.savePicture(capturedPhoto)
@@ -88,7 +89,8 @@ export class PhotoService {
     const capturedPhoto = await Camera.getPhoto({
       resultType: CameraResultType.Uri,
       source: CameraSource.Camera,
-      quality: 50
+      quality: 50,
+      saveToGallery:true
     })
 
     const savedImagenFile = await this.savePicture(capturedPhoto)
